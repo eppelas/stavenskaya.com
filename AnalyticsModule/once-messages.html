@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="shortcut icon" type="image/png" href="img/ic_grade_red_24dp_2x.png" />
+    <!-- FIXME разнести addCss по дополнительным -->
+  
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/open-sans-cyrillic.css" />
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id=logo_header>
+      <img src="img/logo.png" alt="logo">
+    
+    </header>
+    <div >  <a class="link-back " href="analytics.html">
+      <i class="material-icons back-btn">&#xE5C4;</i>
+      <p>Назад</p> </a>
+    </div> 
+      <div class="header-div"> 
+        <h2> Модуль Аналитики </h2> 
+        <nav>
+          <ul id="menu">      
+            <li> <a href="analytics.html">Статистика</a></li>
+            <li> <a href="stores_management.html">Магазины</a></li>
+            <li> <a href="emloyee_management.html">Сотрудники</a></li>
+            <li> <a href="phrases.html">Словарь</a></li>
+            <li> <a href="stations.html">Статус оборудования</a></li>
+            <li> <a href="userlist.html">Пользователи</a></li>      
+            <li class="user-settings-dropdown ">
+             <div class="user-setitngs-dropdown-btn"> Дополнительное</div>  
+             <div class="dropdown-user-settings-content">
+                  <a href="emloyee_management_searching_result.html">Результаты поиска сотрудника</a>
+                  <a href="login.html">Логин</a>
+                  <a href="new_password_errors.html">Ошибки ввода формы</a>
+                  <a href="once-messages.html">Одноразовые сообщения</a>
+             </div>                  
+            </li>
+            <li class="username user-settings-dropdown"> 
+              <div class="user-setitngs-dropdown-btn"> <i class="material-icons user-icon ">&#xE7FD;</i>username</div>  
+                <div class="dropdown-user-settings-content">
+                    <a href="new_password.html">Изменить пароль</a>
+                    <a href="#">Выйти</a>
+                </div>                  
+            </li>
+          </ul> 
+        </nav>
+      </div>
+
+
+ 
+      <ul class="once-messages">
+        <li class="once-message-success"> Все нормусь </li>
+        <li class="once-message-fail"> Невозможно сохранить данные </li>
+        <li class="once-message-warning"> Какой-то warning </li>
+        <li class="once-message-info"> Длинное инфо-сообщение, которое не требует от пользователя никаких действий. </li>
+      </ul>
+  
+
+
+    <h2>Гладко Анна Андреевна</h2>
+    <section class="container clearfix">
+
+      <div class="filters-leftside">
+        <ul class="filters-text-types">
+          <li class="filters-text-type">Приветствие <span class="userstat-filters-stat">4/8</span></li>
+          <li class="filters-text-type">Установление контакта <span class="userstat-filters-stat">0/0</span></li>
+          <li class="filters-text-type">Презентация <span class="userstat-filters-stat">0/0</span></li>
+          <li class="filters-text-type">Завершение сделки <span class="userstat-filters-stat">1/2</span></li>
+          <li class="filters-text-type">Выявление потребностей <span class="userstat-filters-stat">40/18</span></li>
+        </ul>
+        <div class="">Список записей</div>
+        <div class="filters-text-dates">
+          <div class="filters-text-date">
+            c 
+            <input type="text" name="from" id="date-from" class="form-control floating-label" value="25 дек. 2016 г.">
+          </div>
+          <div class="filters-text-date">
+            по 
+            <input type="text" name="to" id="date-to" class="form-control floating-label" value="25 дек. 2017 г.">
+          </div>
+        </div>
+        <ul class="filters-text-times">
+          <li class="filters-text-time">9:50 — 10:12</li>
+          <li class="filters-text-time">10:30 — 10:32</li>
+        </ul>
+      </div>
+      
+      <div class="content-rightside">
+        <div class="userstat-summary">
+          Приветствие 
+          <span class="userstat-summary-count userstat-summary-count-right">4</span> /
+          <span class="userstat-summary-count">8</span>
+        </div>
+        <div class="clearfix">
+          <div class="userstat-texts-list-block userstat-texts-list-block-right">
+            <div class="userstat-texts-list-block-title">
+              Согласно стандартам
+            </div>
+            <ul class="userstat-texts-list">
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">1</span>
+                Добрый день ...
+              </li>
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">2</span>
+                Доброе утро ...
+              </li>
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">1</span>
+                Приветствуем вас ...
+              </li>
+            </ul>
+          </div>
+          <div class="userstat-texts-list-block">
+            <div class="userstat-texts-list-block-title">
+              Несогласно стандартам
+            </div>
+            <ul class="userstat-texts-list">
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">1</span>
+                Добрый день ...
+              </li>
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">2</span>
+                Доброе утро ...
+              </li>
+              <li class="userstat-texts-list-item">
+                <span class="userstat-texts-list-item-count">1</span>
+                Приветствуем вас ...
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="hiddendiv common"></div>
+    <!-- FIXME разнести эти скрипты по дополнительным -->
+    
+    <script src="js/vendors/jquery-2.2.0.min.js"></script>
+    <script src="js/vendors/materialize.min.js"></script>
+    <script src="js/vendors/moment-with-locales.min.js"></script>
+    <script src="js/bootstrap-material-datetimepicker.js"></script>
+    <script src="js/opener.js"></script>
+    <script src="js/forms.js"></script>
+    
+  </body>
+</html>

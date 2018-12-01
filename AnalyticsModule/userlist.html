@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Список пользователей</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/ic_grade_red_24dp_2x.png" />
+    <link rel="stylesheet" type="text/css" href="css/open-sans-cyrillic.css" />
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
+ <!--    <link rel="stylesheet" type="text/css" href="css/rules.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/userlist.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <header id=logo_header>
+      <img src="img/logo.png" alt="logo">
+    </header>
+       <div class="header-div"> 
+        <h2> Модуль Аналитики </h2> 
+        <nav>
+          <ul id="menu">      
+            <li> <a href="analytics.html">Статистика</a></li>
+            <li> <a href="stores_management.html">Магазины</a></li>
+            <li> <a href="emloyee_management.html">Сотрудники</a></li>
+            <li> <a href="phrases.html">Словарь</a></li>
+            <li> <a href="stations.html">Статус оборудования</a></li>
+            <li> <a href="userlist.html" class="menu-selected">Пользователи</a></li>      
+            <li class="user-settings-dropdown ">
+             <div class="user-setitngs-dropdown-btn"> Дополнительное</div>  
+             <div class="dropdown-user-settings-content">
+                  <a href="emloyee_management_searching_result.html">Результаты поиска сотрудника</a>
+                  <a href="login.html">Логин</a>
+                  <a href="new_password_errors.html">Ошибки ввода формы</a>
+                  <a href="once-messages.html">Одноразовые сообщения</a>
+             </div>                  
+            </li>
+            <li class="username user-settings-dropdown"> 
+              <div class="user-setitngs-dropdown-btn"> <i class="material-icons user-icon ">&#xE7FD;</i>username</div>  
+                <div class="dropdown-user-settings-content">
+                    <a href="new_password.html">Изменить пароль</a>
+                    <a href="#">Выйти</a>
+                </div>                  
+            </li>              
+          </ul> 
+        </nav>
+      </div>
+
+
+    <h2>Список пользователей</h2>
+    <section class="container">
+      <div class="userlist-wrap">
+
+        <div class="userlist-titles-wrap clearfix">
+          <div class="userlist-titles">
+            <div class="userlist-titles-text userlist-titles-name">Имя</div>
+            <div class="userlist-titles-text userlist-titles-login">Логин</div>
+          </div>
+          <div class="userlist-titles">
+            <div class="userlist-titles-text userlist-titles-name">Имя</div>
+            <div class="userlist-titles-text userlist-titles-login">Логин</div>
+          </div>
+        </div>
+
+        <ul class="userlist clearfix">
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+              <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+          <li class="userlist-item">
+            <div class="userlist-item-cell userlist-item-name">Крический Алексей Захарович</div>
+            <div class="userlist-item-cell userlist-item-login">
+              <a href="#">alexcrhicevsk</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-password">
+              <a href="#">Сбросить пароль</a>
+            </div>
+            <div class="userlist-item-cell userlist-item-remove">
+              <a href="user_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                            <a href="#modalConfirmation"><i class="material-icons userlist-item-remove-btn">&#xE92B;</i></a>
+                <div id="modalConfirmation" class="modalConfirmationDialog ">
+                  <div>
+                    <p>Удалить пользователя alexcrhicevsk?</p>
+                    <a href="#close" title="Close" class="close"> 
+                    <div class="buttons modal-button">
+                      <input type="submit" class="submit_button cancel_button " value="Отмена" /></a>
+                      <input type="hidden" name="csrfToken" value=""/>
+                      <div class="buttons modal-button">
+                       <input type="submit" class="submit_button " value="Удалить" />
+                      </div>  
+                    </div>
+                  </div>
+               </div>
+            </div>
+          </li>
+
+        </ul>
+        
+      </div>
+
+      </div>
+
+    
+    </section>
+
+
+
+
+    <h2>Добавить пользователя</h2>
+    <section class="container">
+
+
+
+      <div class="full-block-white ">
+
+
+         <!--  <div class=""> -->
+     
+
+  <form action="" method="POST" >
+        <input type="hidden" value="" />
+        
+      <p class="standart-form-mistake formFieldErrors"> Пользователь с таким логином уже существует. </p>  
+    <div class="formField standartFields">
+
+      <div>
+        <label for="input-new-user-name" class="label-input-line">Имя</label>
+      </div>  
+      <div class="input-box">
+        <input type="text" class="input-line " name="input-new-user-name" id="input-new-user-name" value="" />
+      </div>
+    </div>
+
+      <div class="formField standartFields">
+      <div>
+        <label for="input-new-user-login" class="label-input-line ">Логин</label>
+      </div>  
+      <div class="input-box">
+        <input type="text" class="input-line" name="input-new-user-login" id="input-new-user-login" value="" />
+      </div>
+    </div>
+
+      <div class="formField standartFields">
+      <div>
+        <label for="input-new-user-password" class="label-input-line ">Пароль</label>
+      </div>  
+      <div class="input-box">
+        <input type="text" class="input-line " name="input-new-user-password" id="input-new-user-password" value="" />
+      </div>
+      <p class="helper-text">Не менее 8 символов</p> 
+    </div>
+
+    <div class="formField standartFields"> 
+      <div>
+        <label for="input-repeat-new-user-password" class="label-input-line ">Повторите пароль</label>
+      </div>
+      <div class="input-box">
+        <input type="text" class="input-line " name="input-repeat-new-user-password" id="input-repeat-new-user-password" value="" />
+      </div>
+
+
+
+    
+
+  <h3 class="user-rules-category-title">Доступ</h3>
+<!--   </div> -->
+</div>  
+
+
+<div class="centered-forms ">
+<div class="div-block-inline">
+<ul class="user-rules-user-options">
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox1" value="_value_">
+                Доступ к аналитике
+              </label>
+            </li>
+
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox2" value="_value_">
+                Доступ к тексту записей
+              </label>
+            </li>
+
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox3" value="_value_">
+                Управление пользователями сайта
+              </label>
+            </li>
+
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox4" value="_value_">
+                Управление магазинами
+              </label>
+            </li>
+
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox5" value="_value_">
+                Управление сотрудниками магазинов
+              </label>
+            </li>
+            <li class="user-rules-user-options-item">
+              <label>
+                <input type="checkbox" name="checkbox5" value="_value_">
+                Управление станциями записи
+              </label>
+            </li>
+</ul>
+</div>
+
+
+
+<div class="user-rules-subcategory user-rules-subcategory-userlist">
+            <!--   <h4 class="user-rules-subcategory-title">
+                <span class="user-rules-subcategory-title-text">Сотрудниками магазинов</span>
+              </h4> -->
+
+              <ul class="user-rules-subcategory-list">
+              <!-- level 1 -->
+
+                <li class="user-rules-subcategory-list-item">
+
+                  <div class="user-rules-subcategory-list-item-name">
+                    <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                    <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox19" id="checkbox19" value="_value_">
+                    <label for="checkbox19">ТД Санкт-Петербург</label>
+                  </div>
+
+                  <ul class="user-rules-subcategory-list">
+                  <!-- level 2 -->
+
+                    <li class="user-rules-subcategory-list-item">
+                      <div class="user-rules-subcategory-list-item-name">
+                        <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                        <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox20" id="checkbox20" value="_value_">
+                        <label for="checkbox20">Филиал Санкт-Петербург 1</label>
+                      </div>
+
+                      <ul class="user-rules-subcategory-list">
+                      <!-- level 3 -->
+                        <li class="user-rules-subcategory-list-item">
+                          <div class="user-rules-subcategory-list-item-name">
+                            <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox21" id="checkbox21" value="_value_">
+                            <label for="checkbox21">Магазин 1</label>
+                          </div>
+                        </li>
+                        <li class="user-rules-subcategory-list-item">
+                          <div class="user-rules-subcategory-list-item-name">
+                            <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox22" id="checkbox22" value="_value_">
+                            <label for="checkbox22">Магазин 2</label>
+                          </div>
+                        </li>
+                      </ul> 
+
+                    </li>
+                  </ul>
+                </li>
+            
+
+              
+
+
+                  </ul>
+                </li>
+              </ul>
+             </div>
+
+            <input type="hidden" name="csrfToken" value=""/>
+        <div class="buttons">
+          <input type="submit" class="submit_button" value="Добавить" />
+        </div>
+    
+  </form>          
+
+    </section>
+
+
+
+
+
+
+    <script src="js/vendors/jquery-2.2.0.min.js"></script>
+    <script src="js/vendors/materialize.min.js"></script>
+    <script src="js/vendors/moment-with-locales.min.js"></script>
+    <script src="js/bootstrap-material-datetimepicker.js"></script>
+    <script src="js/opener.js"></script>
+    <script src="js/forms.js"></script>
+    
+  </body>
+</html>

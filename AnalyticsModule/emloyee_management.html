@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Управление сотрудниками магазинов</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/ic_grade_red_24dp_2x.png" />
+    <link rel="stylesheet" type="text/css" href="css/open-sans-cyrillic.css" />
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+
+    <header id=logo_header>
+      <img src="img/logo.png" alt="logo">
+    </header>
+      <div class="header-div"> 
+        <h2> Модуль Аналитики </h2> 
+        <nav>
+          <ul id="menu">      
+            <li> <a href="analytics.html">Статистика</a></li>
+            <li> <a href="stores_management.html">Магазины</a></li>
+            <li> <a href="emloyee_management.html" class="menu-selected">Сотрудники</a></li>
+            <li> <a href="phrases.html">Словарь</a></li>
+            <li> <a href="stations.html">Статус оборудования</a></li>
+            <li> <a href="userlist.html">Пользователи</a></li>      
+            <li class="user-settings-dropdown ">
+             <div class="user-setitngs-dropdown-btn"> Дополнительное</div>  
+             <div class="dropdown-user-settings-content">
+                  <a href="emloyee_management_searching_result.html">Результаты поиска сотрудника</a>
+                  <a href="login.html">Логин</a>
+                  <a href="new_password_errors.html">Ошибки ввода формы</a>
+                  <a href="once-messages.html">Одноразовые сообщения</a>
+             </div>                  
+            </li>
+            <li class="username user-settings-dropdown"> 
+              <div class="user-setitngs-dropdown-btn"> <i class="material-icons user-icon ">&#xE7FD;</i>username</div>  
+                <div class="dropdown-user-settings-content">
+                    <a href="new_password.html">Изменить пароль</a>
+                    <a href="#">Выйти</a>
+                </div>                  
+            </li>
+          </ul> 
+        </nav>
+      </div>
+
+
+
+
+
+
+    <h2>Управление сотрудниками магазинов</h2>
+    <section class="container">
+
+
+    
+
+      <div class="full-block-white">
+
+        <label for="employee-searching" class="employee-searching">Поиск по сотрудникам</label>
+        <input type="search" name="employee-searching"> 
+
+
+        <div class="user-rules-subcategorys-wrap">
+
+          
+          <div class="user-rules-subcategory">
+
+            <ul class="user-rules-subcategory-list">
+            <!-- level 1 -->
+
+              <li class="user-rules-subcategory-list-item">
+
+                <div class="user-rules-subcategory-list-item-name">
+                  <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                  <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox52" id="" value="_value_">
+                  <label for="checkbox52">ТД Москва</label>
+                </div>
+
+                <ul class="user-rules-subcategory-list">
+
+                <!-- level 2 -->
+
+                  <li class="user-rules-subcategory-list-item">
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                      <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox53" id="" value="_value_">
+                      <label for="checkbo53">Филиал Москва 2</label>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+
+                    <!-- level 3 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox54" id="" value="_value_">
+                          <label for="checkbox54">Магазин 1</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox55" id="" value="_value_">
+                                <label for="checkbox55">Сергеев Александр Викторович</label>
+                                <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+                          </ul>
+                       </li>
+
+
+                       <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox56" id="" value="_value_">
+                          <label for="checkbox56">Магазин 2</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox57" id="" value="_value_">
+                                <label for="checkbox57">Сергеев Александр Викторович</label>
+                                <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox58" id="" value="_value_">
+                                <label for="checkbox58">Корнеева Василиса Багдановна</label>
+                                <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                          </ul>
+                       </li>
+
+
+                      </ul>
+                    </li>
+
+                 
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="user-rules-subcategory">
+
+            <ul class="user-rules-subcategory-list">
+            <!-- level 1 -->
+
+              <li class="user-rules-subcategory-list-item">
+
+                <div class="user-rules-subcategory-list-item-name">
+                  <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                  <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox59" id="" value="_value_">
+                  <label for="checkbox59">ТД Санкт-Петербург</label>
+                </div>
+
+                <ul class="user-rules-subcategory-list">
+
+                <!-- level 2 -->
+
+                  <li class="user-rules-subcategory-list-item">
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                      <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox60" id="" value="_value_">
+                      <label for="checkbox60">Филиал Москва 2</label>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+
+                    <!-- level 3 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox61" id="" value="_value_">
+                          <label for="checkbox61">Магазин 1</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox62" id="" value="_value_">
+                                <label for="checkbox62">Сергеев Александр Викторович</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+                          </ul>
+                       </li>
+
+
+                       <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox63" id="" value="_value_">
+                          <label for="checkbox63">Магазин 2</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox64" id="" value="_value_">
+                                <label for="checkbox64">Сергеев Александр Викторович</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox65" id="" value="_value_">
+                                <label for="checkbox65">Корнеева Василиса Багдановна</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                          </ul>
+                       </li>
+
+
+                      </ul>
+                    </li>
+
+                 
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+
+
+          <div class="user-rules-subcategory">
+
+            <ul class="user-rules-subcategory-list">
+            <!-- level 1 -->
+
+              <li class="user-rules-subcategory-list-item">
+
+                <div class="user-rules-subcategory-list-item-name">
+                  <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                  <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox66" id="" value="_value_">
+                  <label for="checkbox66">ТД Воронеж</label>
+                </div>
+
+                <ul class="user-rules-subcategory-list">
+
+                <!-- level 2 -->
+
+                  <li class="user-rules-subcategory-list-item">
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                      <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox67" id="" value="_value_">
+                      <label for="checkbox67">Филиал Москва 2</label>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+
+                    <!-- level 3 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox68" id="" value="_value_">
+                          <label for="checkbox68">Магазин 1</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox69" id="" value="_value_">
+                                <label for="checkbox69">Сергеев Александр Викторович</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+                          </ul>
+                       </li>
+
+
+                       <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox70" id="" value="_value_">
+                          <label for="checkbox70">Магазин 2</label>
+                        </div>
+
+
+                         <ul class="user-rules-subcategory-list">
+                          <!-- level 3 -->
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox71" id="" value="_value_">
+                                <label for="checkbox71">Сергеев Александр Викторович</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                            <li class="user-rules-subcategory-list-item">
+                              <div class="user-rules-subcategory-list-item-name">
+                                <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox72" id="" value="_value_">
+                                <label for="checkbox72">Корнеева Василиса Багдановна</label>
+                               <a href="emloyee_editing.html"><i class="material-icons userlist-item-edit-btn">&#xE3C9;</i></a>
+                                <i class="material-icons userlist-item-remove-btn">&#xE92B;</i>
+                              </div>
+                            </li>
+
+                          </ul>
+                       </li>
+
+
+                      </ul>
+                    </li>
+
+                 
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+          
+          
+          
+          
+         
+
+
+        </div>
+
+              <input type="hidden" name="csrfToken" value="5fade5b26ced50b75014c01a9f679ead0581658e-1513290300775-c0482c62d6b84f8edb75ebca"/>
+              <div class="buttons">
+                <input type="submit" class="submit_button" value="Сохранить" />
+              </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+    <h2>Добавить сотрудника</h2>
+    <section class="container">
+
+
+
+      <div class="full-block-white ">
+
+
+
+              <div class="formField descriptionField" id="description_field">
+                
+                <div>
+                  <label for="description" class="label-input-line ">Имя</label>
+                </div>
+                <div class="input-box">
+                  <input type="text" class="input-line" name="description" id="description" value="" />
+                </div>
+
+
+                <div class="dropdown-select formField categoryId-shop-type" id="categoryId-shop-type">
+                  <input type="hidden" name="categoryId-shop-type" value="" />
+                  <i class="menuArrow material-icons">arrow_drop_down</i>
+                  <a class="menuLink" href="#">Тип</a>
+                  <ul>
+                  
+                    
+                    <li style="transition-delay: 0.07s !important; -webkit-transition-delay: 0.07s !important;">
+                      <a value="PhraseCategoryId(1)">Тип 1</a>
+                    </li>
+                    
+                  
+                    
+                    <li style="transition-delay: 0.14s !important; -webkit-transition-delay: 0.14s !important;">
+                      <a value="PhraseCategoryId(2)">Тип 2</a>
+                    </li>
+                    
+                  
+                    
+                    <li style="transition-delay: 0.21s !important; -webkit-transition-delay: 0.21s !important;">
+                      <a value="PhraseCategoryId(3)">Тип 3</a>
+                    </li>
+                  
+                  </ul>
+                </div>
+
+
+
+                <p>Принадлежность к филиалу и магазинам :</p>
+
+
+                <ul class="user-rules-subcategory-list" style="display: block;">
+                <!-- level 1 -->
+
+                  <li class="user-rules-subcategory-list-item">
+
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                     <!--  <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox1" id="checkbox1" value="_value_"> -->
+                      <p>ТД Москва</p>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+                    <!-- level 2 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox73" id="" value="_value_">
+                          <label for="checkbox73">Филиал Москва 1 с длинным названием в несколько строк</label>
+                        </div>
+                      </li>
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox74" id="" value="_value_">
+                          <label for="checkbox74">Филиал Москва 2</label>
+                        </div>
+
+                        <ul class="user-rules-subcategory-list">
+                        <!-- level 3 -->
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox75" id="" value="_value_">
+                              <label for="checkbox75">Магазин 1</label>
+                            </div>
+                          </li>
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox76" id="" value="_value_">
+                              <label for="checkbox76">Магазин 2</label>
+                            </div>
+                       </li>
+                        </ul>
+                      </li>
+                    </ul>   
+                  </li>       
+                </ul>
+
+
+                 <ul class="user-rules-subcategory-list" style="display: block;">
+                <!-- level 1 -->
+
+                  <li class="user-rules-subcategory-list-item">
+
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                      <!-- <input class="user-rules-subcategory-list-item-checkbox" type="radio" name="radio1" id="checkbox7" value="_value_"> -->
+                      <p>ТД Воронеж</p>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+                    <!-- level 2 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox77" id="" value="_value_">
+                          <label for="checkbox77">Филиал Москва 1 с длинным названием в несколько строк</label>
+                        </div>
+                      </li>
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox78" id="" value="_value_">
+                          <label for="checkbox78">Филиал Москва 2</label>
+                        </div>
+
+                        <ul class="user-rules-subcategory-list">
+                        <!-- level 3 -->
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox79" id="" value="_value_">
+                              <label for="checkbox79">Магазин 1</label>
+                            </div>
+                          </li>
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox80" id="checkbox11" value="_value_">
+                              <label for="checkbox80">Магазин 2</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>   
+                  </li>       
+                </ul>
+
+                <ul class="user-rules-subcategory-list" style="display: block;">
+                <!-- level 1 -->
+
+                  <li class="user-rules-subcategory-list-item">
+
+                    <div class="user-rules-subcategory-list-item-name">
+                      <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                    <!--   <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="radio1" id="checkbox7" value="_value_"> -->
+                      <p>ТД Санкт-Петербург</p>
+                    </div>
+
+                    <ul class="user-rules-subcategory-list">
+                    <!-- level 2 -->
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox81" id="" value="_value_">
+                          <label for="checkbox81">Филиал Москва 1 с длинным названием в несколько строк</label>
+                        </div>
+                      </li>
+
+                      <li class="user-rules-subcategory-list-item">
+                        <div class="user-rules-subcategory-list-item-name">
+                          <span class="user-rules-subcategory-list-item-collapsed">+</span>
+                          <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox82" id="" value="_value_">
+                          <label for="checkbox82">Филиал Москва 2</label>
+                        </div>
+
+                        <ul class="user-rules-subcategory-list">
+                        <!-- level 3 -->
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox83" id="" value="_value_">
+                              <label for="checkbox83">Магазин 1</label>
+                            </div>
+                          </li>
+                          <li class="user-rules-subcategory-list-item">
+                            <div class="user-rules-subcategory-list-item-name">
+                              <input class="user-rules-subcategory-list-item-checkbox" type="checkbox" name="checkbox84" id="" value="_value_">
+                              <label for="checkbox84">Магазин 2</label>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>   
+                  </li>       
+                </ul>
+
+
+
+              </div>
+              <input type="hidden" name="csrfToken" value="5fade5b26ced50b75014c01a9f679ead0581658e-1513290300775-c0482c62d6b84f8edb75ebca"/>
+              <div class="buttons">
+                <input type="submit" class="submit_button" value="Добавить сотрудника" />
+              </div>
+
+              </div>
+
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <script src="js/vendors/jquery-2.2.0.min.js"></script>
+      <script src="js/vendors/materialize.min.js"></script>
+    
+      <script src="js/vendors/moment-with-locales.min.js"></script>
+      <script src="js/bootstrap-material-datetimepicker.js"></script>
+    <script src="js/opener.js"></script>
+    <script src="js/forms.js"></script>
+    
+  </body>
+</html>

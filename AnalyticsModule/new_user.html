@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Новый пользователь</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/ic_grade_red_24dp_2x.png" />
+    <link rel="stylesheet" type="text/css" href="css/open-sans-cyrillic.css" />
+    <link rel="stylesheet" type="text/css" href="css/material-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+   <!--  <link rel="stylesheet" type="text/css" href="css/userlist.css" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+
+    <header id=logo_header>
+      <img src="img/logo.png" alt="logo">
+    </header>
+      <div class="header-div"> 
+        <h2> Модуль Аналитики </h2> 
+        <nav>
+          <ul id="menu">      
+            <li> <a href="analytics.html">Статистика</a></li>
+            <li> <a href="phrases.html">Словарь</a></li>
+            <li> <a href="emloyee_management.html">Сотрудники</a></li>
+            <li> <a href="stores_management.html">Магазины</a></li>
+            <li> <a href="userlist.html">Пользователи</a></li>
+            <li> <a href="">Статус оборудования</a></li>
+            <li class="username user-settings-dropdown"> 
+              <div class="user-setitngs-dropdown-btn"> <i class="material-icons user-icon ">&#xE7FD;</i>username</div>  
+                <div class="dropdown-user-settings-content">
+                    <a href="new_password.html">Изменить пароль</a>
+                    <a href="#">Выйти</a>
+                </div>
+              </div>
+            </li>
+          </ul> 
+        </nav>
+      </div>
+
+
+
+<div class="standartForm">
+    <h2>Новый пользователь</h2>
+
+
+
+	
+  
+  <div class="">
+     
+
+	<form action="" method="POST" >
+	      <input type="hidden" value="" />
+	      
+	    <p class="standart-form-mistake formFieldErrors"> Пользователь с таким логином уже существует. </p>  
+		<div class="formField standartFields">
+
+		  <div>
+		    <label for="input-new-user-name" class="label-input-line ">Имя</label>
+		  </div>  
+		  <div class="input-box">
+		    <input type="text" class="input-line input-standart" name="input-new-user-name" id="input-new-user-name" value="" />
+		  </div>
+		</div>
+
+      <div class="formField standartFields">
+      <div>
+        <label for="input-new-user-login" class="label-input-line ">Логин</label>
+      </div>  
+      <div class="input-box">
+        <input type="text" class="input-line input-standart" name="input-new-user-login" id="input-new-user-login" value="" />
+      </div>
+    </div>
+
+      <div class="formField standartFields">
+      <div>
+        <label for="input-new-user-password" class="label-input-line ">Пароль</label>
+      </div>  
+      <div class="input-box">
+        <input type="text" class="input-line input-standart" name="input-new-user-password" id="input-new-user-password" value="" />
+      </div>
+      <p class="helper-text">Не менее 8 символов</p> 
+    </div>
+
+		<div class="formField standartFields"> 
+		  <div>
+		    <label for="input-repeat-new-user-password" class="label-input-line ">Повторите пароль</label>
+		  </div>
+		  <div class="input-box">
+		    <input type="text" class="input-line input-standart" name="input-repeat-new-user-password" id="input-repeat-new-user-password" value="" />
+		  </div>
+
+
+
+	  
+	      <input type="hidden" name="csrfToken" value="5fade5b26ced50b75014c01a9f679ead0581658e-1513290300775-c0482c62d6b84f8edb75ebca"/>
+	      <div class="buttons">
+	        <input type="submit" class="submit_button" value="Добавить" />
+	      </div>
+    
+	</form>
+  </div>
+</div>  
+
+
+
+
+    
+
+
+    <script src="js/vendors/jquery-2.2.0.min.js"></script>
+    <!-- <script src="js/vendors/materialize.min.js"></script>
+    <script src="js/vendors/moment-with-locales.min.js"></script>
+    <script src="js/bootstrap-material-datetimepicker.js"></script>
+     -->
+    <script src="js/opener.js"></script>
+    <script src="js/forms.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,132 @@
+/* ==================================== */
+/* RULES */
+/* ==================================== */
+.user-rules-wrap {
+    margin-bottom: 80px;
+    padding: 20px 40px;
+	background-color: #fff;
+}
+/* ==================================== */
+.user-rules-user-info {}
+.user-rules-user-name {
+	float: left;
+	font-size: 20px;
+}
+.user-rules-user-options {
+    margin: 0 0 0 260px;
+}
+.user-rules-user-options-item {
+	display: inline-block;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+/* ==================================== */
+.user-rules-category {}
+.user-rules-category-title {
+    margin: 40px 0 0;
+	text-align: center;
+	color: #666;
+	font-size: 28px;
+	font-weight: 100;
+}
+
+/* ==================================== */
+.user-rules-subcategorys-wrap {
+	font-size: 0;
+}
+
+.user-rules-subcategory {
+	display: inline-block;
+    vertical-align: top;
+	width: 50%;
+    padding: 0 32px;
+    font-size: 1rem;
+}
+.user-rules-subcategory-title {
+	display: table;
+    width: 100%;
+    min-height: 72px;
+    padding: 12px 40px;
+    line-height: 1.2;
+	text-align: center;
+	color: #fff;
+	font-size: 23px;
+	font-weight: 400;
+	background-color: #ed3030;
+}
+	.user-rules-subcategory-title-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+/* ==================================== */
+.user-rules-subcategory-list {
+	padding-left: 21px;
+    padding-bottom: 8px;
+    display: none;
+}
+.user-rules-subcategory > .user-rules-subcategory-list {
+	padding-left: 48px;
+	display: block;
+}
+
+
+
+	.user-rules-subcategory-list-item {}
+		.user-rules-subcategory-list-item-name {
+			position: relative;
+		    margin-bottom: 12px;
+   			line-height: 1.2;
+		}
+
+
+		
+		.user-rules-subcategory-list-item-collapsed {
+			position: absolute;
+			left: -40px;
+			top: -1px;
+			color: #25CAB6;
+			font-weight: 800;
+			cursor: pointer;
+		}
+
+	.user-rules-subcategory-list-item-opened {
+			position: absolute;
+			left: -40px;
+			top: -1px;
+			color: #25CAB6;
+			font-weight: 800;
+			cursor: pointer;
+		}
+
+	.user-rules-subcategory-list-item-unavailable {
+			position: absolute;
+			left: -40px;
+			top: -1px;
+			color: #B3B3B3;
+			font-weight: 800;
+		}
+
+
+
+		.user-rules-subcategory-list-item-checkbox {
+			position: absolute;
+		    left: -24px;
+			color: #666;
+			font-weight: 600;
+			cursor: pointer;
+		}
+
+/* ==================================== */
+@media (max-width: 960px) {
+	.user-rules-user-name {
+	    float: none;
+	}
+	.user-rules-user-options {
+	    margin: 0;
+	}
+	.user-rules-subcategory {
+	    width: 100%;
+	}
+}

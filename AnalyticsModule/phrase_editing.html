@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Редактирование фразы</title>
+    <link rel="shortcut icon" type="image/png" href="img/ic_grade_red_24dp_2x.png" />
+    
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+      <link rel="stylesheet" type="text/css" href="css/open-sans-cyrillic.css" />
+    
+      <link rel="stylesheet" type="text/css" href="css/material-icons.css" />
+    
+      <link rel="stylesheet" type="text/css" href="css/form.css" />
+    
+    <!--   <link rel="stylesheet" type="text/css" href="css/datetimepicker.css" /> -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id=logo_header>
+      <img src="img/logo.png" alt="logo">
+    </header>
+    <div >  <a class="link-back " href="phrases.html">
+      <i class="material-icons back-btn">&#xE5C4;</i>
+      <p>Назад</p> </a>
+    </div>  
+      <div class="header-div"> 
+        <h2> Модуль Аналитики </h2> 
+        <nav>
+          <ul id="menu">      
+            <li> <a href="analytics.html">Статистика</a></li>
+            <li> <a href="stores_management.html">Магазины</a></li>
+            <li> <a href="emloyee_management.html">Сотрудники</a></li>
+            <li> <a href="phrases.html">Словарь</a></li>
+            <li> <a href="stations.html">Статус оборудования</a></li>
+            <li> <a href="userlist.html">Пользователи</a></li>      
+            <li class="user-settings-dropdown ">
+             <div class="user-setitngs-dropdown-btn"> Дополнительное</div>  
+             <div class="dropdown-user-settings-content">
+                  <a href="emloyee_management_searching_result.html">Результаты поиска сотрудника</a>
+                  <a href="login.html">Логин</a>
+                  <a href="new_password_errors.html">Ошибки ввода формы</a>
+                  <a href="once-messages.html">Одноразовые сообщения</a>
+             </div>                  
+            </li>
+            <li class="username user-settings-dropdown"> 
+              <div class="user-setitngs-dropdown-btn"> <i class="material-icons user-icon ">&#xE7FD;</i>username</div>  
+                <div class="dropdown-user-settings-content">
+                    <a href="new_password.html">Изменить пароль</a>
+                    <a href="#">Выйти</a>
+                </div>                  
+            </li>
+          </ul> 
+        </nav>
+      </div>
+
+    
+
+
+  <h2>Редактировать фразу</h2>
+  <section class="container">
+
+        <div class="full-block-white">
+          
+          <div class="changeSomethingForm">
+             
+
+        <form action="/phrase/change" method="POST" >
+            
+              <input type="hidden" value="" />
+              
+
+
+
+
+
+        <div class="formField descriptionField" id="description_field">
+          
+          <div>
+            <label for="description" class="label-input-line filled">Фраза</label>
+          </div>
+          
+          
+          <div class="input-box">
+            <input type="text" class="input-line" name="description" id="description" value="Приветствую" />
+          </div>
+
+          
+        </div>
+        </form>
+
+
+              
+
+
+
+
+
+        <div class="formField regexpField" id="regexp_field">
+          
+          <div>
+            <label for="regexp" class="label-input-line filled">Регулярное выражение</label>
+          </div>
+          
+          
+          <div class="input-box">
+            <input type="text" class="input-line" name="regexp" id="regexp" value="\mдаст[., ]+вам[., ]+возможность\M" />
+          </div>
+
+          
+        </div>
+
+
+
+
+              <div class="centered-forms">
+                
+
+
+
+
+        <div class="formField desiredField" id="desired_field">
+          
+          
+          
+            
+            
+            <div>
+              <input type="radio" id="desired_true" name="desired" value="true" />
+              <label for="desired_true" class="radio__label">желательная</label>
+            </div>
+            
+          
+            
+            
+            <div>
+              <input type="radio" id="desired_false" name="desired" value="false" />
+              <label for="desired_false" class="radio__label">нежелательная</label>
+            </div>
+            
+          
+
+          
+        </div>
+
+
+
+                
+
+
+
+
+
+        <div class="formField categoryIdField" id="categoryId_field">
+          
+          
+        <div class="dropdown-select" id="categoryId">
+          <input type="hidden" name="categoryId" value="" />
+          <i class="menuArrow material-icons">arrow_drop_down</i>
+          <a class="menuLink" href="#">На стадии разговора</a>
+          <ul>
+          
+            
+            <li style="transition-delay: 0.07s !important; -webkit-transition-delay: 0.07s !important;">
+              <a value="PhraseCategoryId(1)">Приветствие</a>
+            </li>
+            
+          
+            
+            <li style="transition-delay: 0.14s !important; -webkit-transition-delay: 0.14s !important;">
+              <a value="PhraseCategoryId(2)">Установление контакта</a>
+            </li>
+            
+          
+            
+            <li style="transition-delay: 0.21s !important; -webkit-transition-delay: 0.21s !important;">
+              <a value="PhraseCategoryId(3)">Выявление потребности</a>
+            </li>
+            
+          
+            
+            <li style="transition-delay: 0.28s !important; -webkit-transition-delay: 0.28s !important;">
+              <a value="PhraseCategoryId(4)">Презентация</a>
+            </li>
+            
+          
+            
+            <li style="transition-delay: 0.35s !important; -webkit-transition-delay: 0.35s !important;">
+              <a value="PhraseCategoryId(5)">Работа с возражением</a>
+            </li>
+            
+          
+            
+            <li style="transition-delay: 0.42s !important; -webkit-transition-delay: 0.42s !important;">
+              <a value="PhraseCategoryId(6)">Завершение</a>
+            </li>
+            
+          
+          </ul>
+        </div>
+
+          
+        </div>
+
+
+
+
+              </div>
+              <input type="hidden" name="csrfToken" value="5fade5b26ced50b75014c01a9f679ead0581658e-1513290300775-c0482c62d6b84f8edb75ebca"/>
+              <div class="buttons">
+                <input type="submit" class="submit_button" value="Сохранить" />
+              </div>
+            
+        </form>
+
+          </div>
+        </div>
+  </section>
+
+
+
+    <div class="hiddendiv common"></div>
+    
+      <script src="js/vendors/jquery-2.2.0.min.js"></script>
+    
+      <script src="js/vendors/materialize.min.js"></script>
+    
+      <script src="js/vendors/moment-with-locales.min.js"></script>
+    
+      <script src="js/bootstrap-material-datetimepicker.js"></script>
+    
+      <script src="js/opener.js"></script>
+    
+      <script src="js/forms.js"></script>
+    
+  </body>
+</html>
+

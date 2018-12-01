@@ -1,0 +1,411 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+@import 'normalize.css';
+@import 'lightbox.min.css';
+/*@import 'responsive.css';
+*/
+
+
+
+
+/**************
+General
+**************/
+body {
+	margin: 0;
+	font-family:'Open Sans', sans-serif;;
+	word-wrap: break-word;
+}
+
+a{
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+
+}
+
+
+/**************
+Heading
+**************/
+header {
+	position: fixed;
+	top: 30px;
+	left: 24px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 0.8em;
+	color: #26C6DA;
+}
+
+
+/**************
+Navigation
+**************/
+
+nav {
+	position: fixed;
+	top: 80px;
+	left: 24px;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: block;
+	margin: 3px 0 0 0;
+	padding: 0;
+
+	
+}
+
+nav li a {
+	display: block;
+	font-weight: 400;
+	font-size: 0.75em;
+	line-height: 1.9em;
+	text-transform: uppercase;
+
+}
+
+
+
+/*****************
+Footer
+*******************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;
+	position: relative;
+}
+
+
+.social-icon {
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+
+/*****************
+PAGE: MAIN
+*******************/
+
+#wrapper {
+max-width: 100%;
+margin: 0 auto;
+padding: 0 5% 0 196px;
+}
+
+
+.maingallery {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	max-width: 100%;
+}
+
+
+.maingallery a {
+		display: block;
+	}
+
+.gallery-item { width: 300px; }
+	
+
+/*****************
+Colors
+*******************/
+
+
+/* site body */
+body {
+	background-color: #fff;
+	color: #999;
+}
+
+
+/* links */
+
+a {
+	color: #6ab47b;
+
+}
+
+
+/* nav link */
+
+nav a, nav a:visited {
+	color: #4C4A48;
+}
+
+/* selected nav link */
+
+nav a.selected, nav a:hover {
+	color: #26C6DA;
+}
+
+
+
+
+/*****************
+PAGE: TRAVEL
+*******************/
+
+.ThreeBlocksGallery {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+/*	width: 940px;*/
+	left: 70px;
+	top: 44px;
+	
+
+}
+
+.ThreeBlocksGallery li {
+	float: left;
+	height: 260px;
+	width: 304px;
+	padding: 0 0 6px 16px;
+	color: #bdc3c7;
+	display: inline-block;
+	}
+
+.ThreeBlocksGallery a {
+	display: block;
+	}
+
+
+
+
+#content {
+	max-width: 100%;
+	margin: 0;
+    right: 0px;
+    position: absolute;
+   	display: block;
+    left: 110px;
+}
+
+
+
+
+.country {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	color: #4d4d4d;
+
+}
+
+.city {
+	color: #9e9e9e;
+	margin: 0;
+	font-size: 0.85em;
+	font-weight: 500;
+	text-align: left;
+}
+
+
+
+
+
+
+/**************
+ALL TRAVEL PAGES 
+*************/
+
+
+
+.travelgallery {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+  	text-align: center;
+  	width: 740px;
+  	
+
+	}
+
+
+
+.traveltext h1, 
+.traveltext p {
+	width: 740px;
+	display: block;
+	margin: 40px auto 20px;
+	}
+
+
+
+
+.travelgallery img {
+  padding: 0 10px 15px 0;
+  max-height: 540px;
+}
+
+
+
+
+
+/************
+ABOUT PAGE
+*************/
+
+#about_text {
+	color: #4d4d4d;
+	width: 600px;
+	text-align: left;
+	margin-left: auto; 
+	margin-right: auto;
+
+	padding: 180 0 10 0;
+}
+
+
+#bw_photos {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100%;	
+	margin-top: 60;
+	margin-bottom: 80;
+}
+
+#img_about_cover{
+	max-width: 1100;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+/************
+NEWS PAGE
+*************/
+
+
+#news-content {
+	max-width: 100%;
+	margin: 0;
+    right: 0px;
+    /*position: absolute;*/
+    position: relative;
+   	display: block;
+    left: 110px;
+}
+
+
+
+.headline {
+	text-align: left;
+	margin: 5 0 0 0;
+	font-size: 0.85em;
+	color: #4d4d4d;
+
+}
+
+.date {
+	color: #9e9e9e;
+	margin: 0;
+	font-size: 0.85em;
+	font-weight: 500;
+	text-align: left;
+}
+
+
+.ThreeBlocksGalleryNews li {
+	float: left;
+	width: 304px;
+	padding: 0 0 6px 16px;
+	color: #bdc3c7;
+	display: inline-block;
+	}
+
+.ThreeBlocksGalleryNews a {
+	display: block;
+	}
+
+
+.ThreeBlocksGalleryNews {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	left: 70px;
+	top: 44px;
+	}
+
+
+/**********
+NEWS STYLE
+**********/
+
+.newscontainer {
+	position: relative;
+	margin: 84px auto;
+	padding: 0;
+	max-width: 700px;
+	min-width: 200px;
+	text-align: left;
+	font-size: 0.93em;
+}
+
+.page_wrapper {
+	padding: 0 170px;
+}
+
+/** illustrations **/
+
+.news3-1 {
+	position: relative;
+	max-width: 450px;
+	margin: 0 0 10px 0;
+	
+}
+#news3ill1 {
+	text-align: center;
+}
+
+.news3img {
+	position: relative;
+	max-width: 300px;
+	margin: 10px 15px 10px 5px;
+	vertical-align: text-top;
+	}
+
+#news3ill {
+	text-align: center;
+}
+
+.news3illhorizontal {
+	max-width: 600px;
+	position: relative;
+	margin: 10px 0 10px 0;
+}
+
+
+
+

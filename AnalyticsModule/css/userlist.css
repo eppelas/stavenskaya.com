@@ -1,0 +1,95 @@
+/* ==================================== */
+/* USERLIST */
+/* ==================================== */
+.userlist-titles-wrap {
+	background-color: #fff;
+	border-left: 0.5px solid #E0E0E0;
+	border-top: 0.5px solid #E0E0E0;
+}
+
+.userlist-titles {
+	float: left;
+	font-size: 0;
+	width: 50%;
+    padding: 12px 22px;
+	border-right: 0.5px solid #E0E0E0;
+}
+	.userlist-titles-text {
+		display: inline-block;
+		color: #666;
+		font-size: 12px;
+		font-weight: 600;
+		text-align: center;
+	}
+	.userlist-titles-name {
+		width: 40%;
+	}
+	.userlist-titles-login {
+		width: 28%;
+	}
+
+
+.userlist {
+    margin: 0;
+	border-left: 0.5px solid #E0E0E0;
+	border-top: 0.5px solid #E0E0E0;
+}
+
+	.userlist-item {
+		float: left;
+		font-size: 0;
+		width: 50%;
+    	padding: 12px 22px;
+		border-right: 0.5px solid #E0E0E0;
+		border-bottom: 0.5px solid #E0E0E0;
+		background-color: #fff;
+	}
+	.userlist-item > * {
+		font-size: 13px;
+	}
+		.userlist-item-cell {
+			display: inline-block;
+			color: #333;
+			text-align: center;
+		    padding: 0 8px;
+		    vertical-align: middle;
+		}
+		.userlist-item-name {
+			width: 40%;
+    		text-align: left;
+		}
+		.userlist-item-login {
+			width: 28%;
+		}
+		.userlist-item-password {
+			width: 25%;
+
+		}
+		.userlist-item-remove {
+			width: 7%;
+		}
+			.userlist-item-remove-btn {
+				color: #ee3333;
+				font-size: 20px;
+				cursor: pointer;
+    			vertical-align: middle;
+			}
+
+		.userlist-item-password a {
+			color: #333;
+		}	
+
+@media (max-width: 960px) {
+		
+	.userlist-titles {
+		width: 100%;
+		display: none;
+	}
+	.userlist-titles:first-child {
+		display: block;
+	}
+
+	.userlist-item {
+		width: 100%;
+	}
+}

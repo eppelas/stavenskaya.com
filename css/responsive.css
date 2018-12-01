@@ -1,0 +1,416 @@
+@media (max-width: 626px) {
+
+	
+
+/*****************
+Main Page
+*******************/
+
+header {
+	margin: 5px auto 5px auto;
+	display: inline-block;
+
+	top: 5px;
+	left: 0px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	}
+
+
+nav ul li {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.2em;
+	padding: 5px 2px 0 2px;
+}
+
+nav {
+	position: fixed;
+	top: 25px;
+	text-align: center;
+	left: 0;
+
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(255,255,255,.8);
+}
+
+#wrapper {
+	padding: 0;
+	padding-top: 50px;
+	text-align: center;
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+}
+
+#wrapper ul {
+	text-align: center;
+}
+
+.gallery-item {
+	max-width: 100%;
+}
+
+
+footer {
+	padding-top: 60px;
+	/*margin-top: */
+}
+
+/*****************
+Travel Page
+*******************/
+
+#content {
+	padding: 0;
+/*	padding-top: 30px;*/
+	text-align: center;
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+	left: 0px;
+	margin: auto;
+	top: 1px;
+}
+
+
+.ThreeBlocksGallery li{
+	left: 0;
+	padding: 0;
+	padding-top: 5px;
+	margin: auto;
+	max-width: 100%;
+}
+
+
+.ThreeBlocksGallery {
+	left: 0;
+	text-align: center;
+	margin: auto;
+}
+
+.ThreeBlocksGallery p {
+	text-align: center;
+}
+
+
+
+/*****************
+News Page
+*******************/
+
+
+.ThreeBlocksGalleryNews {
+	left: 0;
+	top: 0;
+	text-align: center;
+	margin: auto;
+	width: 300px;
+	max-width: 100%
+}
+
+#news-content {
+	left: 0;
+	text-align: center;
+	margin: auto;
+	top: 30px;
+}
+
+
+.ThreeBlocksGalleryNews li {
+	
+	max-width: 100%;
+	padding: 0;
+	padding-top: 20px;
+}
+
+#news-content p {
+	text-align: center;
+}
+
+
+
+/*****************
+About Page
+*******************/
+
+
+#about_text {
+	max-width: 100%;
+	padding: 0;
+	padding-top: 80px;
+}
+
+#about_text p {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+
+/*****************
+Travel Internal Pages
+*******************/
+
+
+.travelgallery {
+	max-width: 100%;
+	padding-top: 80px;
+}
+
+.travelgallery img {
+	height: auto;
+	padding: 0;
+}
+
+
+
+
+
+/*****************
+News Internal Pages
+*******************/
+
+.page_wrapper {
+	padding: 0;
+	margin: auto;
+	width: 100%;
+}
+
+
+
+.newscontainer {
+	padding: 0;
+	margin: auto;
+	padding-top: 60px;
+	max-width: 100%;
+}
+
+.news3-1 {
+	max-width: 100%;
+}
+
+.news3illhorizontal {
+	max-width: 100%;
+}
+
+.newscontainer p {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+#news3ill img{
+	max-width: 100%;
+	padding-top: 20px;
+	margin: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen 
+and (min-width: 627px)
+and (max-width: 864px) {
+	
+
+/*****************
+Main Page
+*******************/
+
+
+header {
+	margin: 5px auto 5px auto;
+	display: inline-block;
+
+	top: 5px;
+	left: 0px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	}
+
+nav ul li {
+	display: inline-block;
+	margin: 0;
+	font-size: 1.2em;
+	padding: 5px 2px 0 2px;
+}
+
+nav {
+	position: fixed;
+	top: 25px;
+	text-align: center;
+	left: 0;
+
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(255,255,255,.8);
+}
+
+
+
+#wrapper {
+	padding: 0;
+	margin: 0 auto;
+	padding-top: 50px;
+	text-align: center;
+	position: relative;
+	width: 615px;
+	max-width: 100%;
+	
+}
+
+
+
+
+/*****************
+Travel Page
+*******************/
+
+#content {
+	padding: 0;
+	text-align: center;
+	position: relative;
+	width: 864px;
+	max-width: 100%;
+	left: 0px;
+	top: 6px;
+	margin: auto;
+}
+
+
+.ThreeBlocksGallery li{
+	left: 0;
+	margin: 0 5px;
+	padding: 0px;
+	float: none;
+	width: 300px;
+
+
+}
+
+
+.ThreeBlocksGallery {
+	left: 0;
+	text-align: center;
+	width: 648px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.ThreeBlocksGallery p {
+	text-align: center;
+}
+
+
+
+/*****************
+News Page
+*******************/
+
+.ThreeBlocksGalleryNews {
+	left: 0;
+	top: 0;
+	text-align: center;
+	margin: auto;
+	width: 648px;
+	max-width: 100%
+}
+
+#news-content {
+	left: 0;
+	text-align: center;
+	margin: auto;
+	top: 30px;
+
+}
+
+
+.ThreeBlocksGalleryNews li {
+	
+	width: 300px;
+	max-width: 100%;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0 8px;
+}
+
+#news-content p {
+	text-align: center;
+}
+
+
+/*****************
+Travel Internal Pages
+*******************/
+
+
+.travelgallery {
+	max-width: 100%;
+	padding-top: 80px;
+}
+
+.travelgallery img {
+	height: auto;
+	padding: 0;
+}
+
+
+
+
+
+/*****************
+News Internal Pages
+*******************/
+
+.page_wrapper {
+	padding: 0;
+	margin: auto;
+	width: 100%;
+}
+
+
+
+.newscontainer {
+	padding: 0;
+	margin: auto;
+	padding-top: 60px;
+	max-width: 100%;
+}
+
+.news3-1 {
+	max-width: 100%;
+}
+
+.news3illhorizontal {
+	max-width: 100%;
+}
+
+.newscontainer p {
+padding-left: 30px;
+padding-right: 30px;
+}
+
+#news3ill img{
+	max-width: 80%;
+	padding-top: 20px;
+	margin: 0;
+}
+
+
+}	
