@@ -15,3 +15,17 @@ Ireland Gallery
 #gallery img {
   padding: 0 0 15px 0;
 }
+
+
+.gif-block {
+	position: relative;
+	margin: 0 auto;
+	list-style: none;
+  	text-align: center;
+  	width: 740px;
+}
+
+.gif-block img {
+  padding: 0 10px 15px 0;
+  max-height: 540px;
+}
