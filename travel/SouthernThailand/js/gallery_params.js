@@ -1,6 +1,6 @@
 $(function () {
 
-    var photos = createPhotos('img/', 1, 13);
+    var photos = createPhotos('southernthailand/img/', 1, 12);
     $('.travelgallery').append(photos);
     $('img').unveil(200);
 

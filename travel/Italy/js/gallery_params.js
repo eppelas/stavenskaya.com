@@ -1,6 +1,6 @@
 $(function () {
 
-    var photos = createPhotos('img/', 1, 13);
+    var photos = createPhotos('italy/img/', 1, 13);
     $('.travelgallery').append(photos);
     $('img').unveil(200);
 

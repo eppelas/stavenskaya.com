@@ -1,6 +1,6 @@
 $(function () {
 
-    var photos = createPhotos('img/', 1, 45);
+    var photos = createPhotos('finlandbybikes/img/', 1, 45);
     $('.travelgallery').append(photos);
     $('img').unveil(200);
 
