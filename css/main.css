@@ -263,6 +263,8 @@ ALL TRAVEL PAGES
 .travelgallery img {
   padding: 0 10px 15px 0;
   max-height: 540px;
+  min-height: 100px !important;
+  width: auto !important;
 }
 
 

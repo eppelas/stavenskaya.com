@@ -5,7 +5,7 @@ $(function () {
 	    var length = end - start + 1;
 	    return new Array(length).join().split(',').map(function (item, index) {
 	        var url = path + (start + index) + '.jpg';
-	        return $('<a href="' + url + '" data-lightbox="gallery"><img style="min-height: 300px" height="500" data-src="' + url + '"/></a>');
+	        return $('<a href="' + url + '" data-lightbox="gallery"><img style=" min-height="100" height="500" data-src="' + url + '"/></a>');
 	    });
 	};
 

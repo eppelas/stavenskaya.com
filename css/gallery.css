@@ -22,7 +22,8 @@ Ireland Gallery
 	margin: 0 auto;
 	list-style: none;
   	text-align: center;
-  	width: 740px;
+
+  	max-width: 100% !important;
 }
 
 .gif-block img {
